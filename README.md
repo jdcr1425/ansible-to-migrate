@@ -11,10 +11,10 @@ This LAMP stack can be on a single node or multiple nodes. The inventory file
 'hosts' defines the nodes in which the stacks should be configured.
 
         [webservers]
-        localhost
+        web_server
 
         [dbservers]
-        bensible
+        mysql_server
 
 Here the webserver would be configured on the local host and the dbserver on a
 server called "bensible". The stack can be deployed using the following
