@@ -19,6 +19,7 @@ This LAMP stack can be on a single node or multiple nodes. The inventory file
         
         
 <h2>Web_server</h2>
+
 En el servidor web se realiza la instalación del servicio httpd y ntp, los cuales funcionan como servidor web y administrador de fechas . Para Cent os se usaron algunos modulos que son especificos :
 
 <b>yum:</b> permite el uso del manejador de repositorios de Centos. El modulo equivalente en Ubuntu es 'apt'.
@@ -31,8 +32,9 @@ En el servidor web se realiza la instalación del servicio httpd y ntp, los cual
 
 Para la configuración del host con el motor de base de datos se instala con Ansible el motor MySQL y se realiza el uso de modulos ya explicados y aparecen 2 nuevos modulos.
 
-mysql_db: este modulo permite gestionar las bases de datos en el motor MySQL
-mysql_user: este modulo permite gestionar los usuarios de una base de datos MySQL
+<b>mysql_db:</b> este modulo permite gestionar las bases de datos en el motor MySQL
+
+<b>mysql_user:</b> este modulo permite gestionar los usuarios de una base de datos MySQL
 
 estos modulos  interactuan directamente con el servicio MySQL no con el OS en el host, es decir que no necesitan una equivalencia en Ubuntu, por lo tanto su uso sera igual que si fuera Cent os .
 
