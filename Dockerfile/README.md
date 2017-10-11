@@ -2,8 +2,6 @@
 
 En este directorio se encuentra el archivo Dockerfile para la creación de la imagen la cual permitirá crear los contenedores de docker y el archivo authorized_keys para la Configuracion de la autenticacion por llaves en el servicio SSH de cada contedenor.
 
-<h2>Configuraciones básicas y creación de dockers</h2> 
-
 <h3>Primer paso</h3>
 
 <b>Debes construir un docker personalizado que incluye el servidor openssh</b>
@@ -14,7 +12,7 @@ En este directorio se encuentra el archivo Dockerfile para la creación de la im
 
 $ (sudo) docker build -t {{ nombre imagen }} .
 
-En mi caso el {{ nombre contenedor }} será server_parcial
+<h3>En mi caso el {{ nombre contenedor }} será server_parcial</h3>
 
 $ (sudo) docker build -t server_parcial .
 
