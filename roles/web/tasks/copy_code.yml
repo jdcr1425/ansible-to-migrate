@@ -3,7 +3,10 @@
 # the version control system.
 
 - name: Copy the code from repository
-  git: repo={{ repository }} dest=/var/www/html/
+  git: repo={{ repository }} dest=/opt/prueba
+
+- name: copiar sitio a el directorio web de apache
+  command: cp -R -u /opt/prueba /var/www/html/prueba
 
 - name: Creates the index.php file
-  template: src=index.php.j2 dest=/var/www/html/index.php
+  template: src=index.php.j2 dest=/var/www/html/prueba/index.php
